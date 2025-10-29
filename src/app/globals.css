@@ -11,3 +11,8 @@ body {
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
 }
+
+.blackBox {
+    width: 30vw;
+    height: 85vh;
+}
