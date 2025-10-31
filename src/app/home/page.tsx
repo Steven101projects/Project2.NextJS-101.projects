@@ -19,15 +19,16 @@ export default function Home(){
         </div>
         </div>
         <div id="centerPart" className="">
- <div id="helloWorldCard" className="right-[2vw] w-[50vw] h-[46vh] ml-6 mt-[13vh] bg-white border border-black rounded-4xl pl-6"
+ <div id="helloWorldCard" className="right-[2vw] w-[50vw] h-[50vh] ml-3 mt-[5vh] bg-white border border-black rounded-4xl pl-6"
 >
-  <h1 className="text-[7vw] text-[#222222]">
+  <h1 className="text-[7.4vw] text-[#222222]">
     Hello,<span className="italic">World!</span>
   </h1>
-  <p className="text-[3.7vh] text-[#222222]">
-    How are ya? I’m a creative who loves problem-solving and thinking-critically.
-    Man.. living in this world is hard, <br /> so let’s make it s easier together!
-  </p>
+<p className="relative bottom-5 text-[3.9vh] text-[#222222] ml-2">
+  Hey there! I’m a creative and tech enthusiast who loves solving problems, thinking critically, 
+  and bringing ideas to life through innovation. Life can be challenging at times, <br /> 
+  so let’s make it easier together!
+</p>
 </div>
 <div id="centerPartBottom" className="flex">
 <div className="flex flex-col items-start space-y-3 mt-4" id="moreButtons">
