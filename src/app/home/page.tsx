@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import NavWheel from '../../components/NavWheel';
+import ExternalLinks from '../../components/ExternalLinks';
 
 export default function Home(){
 
@@ -7,43 +8,47 @@ export default function Home(){
         <div className="flex">
         <section id="leftSide" className="flex">
         <div id="links">
-<Link href="/" className="px-2 py-1 text-9xl">
+<Link href="/" className="px-2 py-1 text-8xl">
         1O1~
         </Link>
         <nav>
                 <NavWheel />
             </nav>
-        <div id="copyRight" className="text-[1rem] ml-3.5 mt-2.5">
+        <div id="copyRight" className="text-[1.4rem] ml-3.5 mt-2.5">
             Copyright © 2025 <br></br> Nico Castro.  <br></br> All rights reserved.
         </div>
         </div>
         <div id="centerPart" className="">
- <div id="helloWorldCard" className="w-[40vw] ml-4 mt-[19vh] bg-white border border-black rounded-4xl p-8"
+ <div id="helloWorldCard" className="right-[2vw] w-[50vw] h-[46vh] ml-6 mt-[13vh] bg-white border border-black rounded-4xl pl-6"
 >
-  <h1 className="text-[5vw]">
+  <h1 className="text-[7vw] text-[#222222]">
     Hello,<span className="italic">World!</span>
   </h1>
-  <p className="text-[3vh] leading-relaxed text-black">
+  <p className="text-[3.7vh] text-[#222222]">
     How are ya? I’m a creative who loves problem-solving and thinking-critically.
-    Man.. living in this world is hard, so let’s make it s easier together!
+    Man.. living in this world is hard, <br /> so let’s make it s easier together!
   </p>
 </div>
 <div id="centerPartBottom" className="flex">
 <div className="flex flex-col items-start space-y-3 mt-4" id="moreButtons">
-  <p className="text-black text-lg">To know more,</p>
-  <button className="bg-black text-2xl text-white py-2 px-6 rounded-full w-56 h-16">
-    Recent Projects
+  <p className="text-black text-2xl">To know more,</p>
+
+  <button className="relative overflow-hidden bg-black text-2xl text-white py-2 px-6 rounded-full w-56 h-20 transform transition duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-gray-300 hover:via-white hover:to-gray-300 hover:text-black shadow-lg">
+    <span className="relative z-10">Recent Projects</span>
+    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-700"></span>
   </button>
-  <button className="bg-black text-2xl text-white py-2 px-6 rounded-full w-56 h-16">
-    Let’s Talk!
+
+  <button className="relative overflow-hidden bg-black text-2xl text-white py-2 px-6 rounded-full w-56 h-20 transform transition duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-gray-300 hover:via-white hover:to-gray-300 hover:text-black shadow-lg">
+    <span className="relative z-10">Let’s Talk!</span>
+    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-700"></span>
   </button>
 </div>
 
-            {/* Rotating Globe Img */}
+  {/* Rotating Globe Img */}
   <img
     src="/earth.gif"
     alt="Earth"
-    className="absolute top-[48vh] right-[24vw] w-[50vw] h-[50vh] object-contain"
+    className="absolute top-[42vh] right-[13vw] w-[55vw] h-[55vh] object-contain"
   />
         </div>
         </div>
@@ -55,20 +60,21 @@ export default function Home(){
 >
   <div
     id="introAboutMe"
-    className="blackBox bg-black text-white rounded-l-4xl mt-12 p-4 flex flex-col max-w-sm"
+    className="blackBox bg-black text-white rounded-l-4xl mt-10 p-4 flex flex-col max-sm:"
   >
-    <img
-      className="relative right-32 w-[45vw] h-[40vh] self-end rounded-md mb-2"
-      src="damn.jpg"
-      alt="Profile"
-    />
-    <p className="leading-relaxed text-xl">
+<img
+  className="absolute right-5 w-[28vw] h-[50vh] object-cover rounded-4xl "
+  src="damn.jpg"
+  alt="Profile"
+/>
+    <p className="leading-relaxed text-[3.4vh] p-3  mt-[50vh]">
       <span className="italic font-semibold">Welcome!</span> I’m Nico Castro, <br />
-      A Software/Web Engineer | System Architect | Graphic Designer | Tech
+      A Software/Web Engineer | <br /> Software System Architect |  Graphic Designer | Tech
       Instructor | Tech Leader |
     </p>
   </div>
   {/* Place the External Link Components here */}
+  <ExternalLinks />
 </section>
 
         </div>
