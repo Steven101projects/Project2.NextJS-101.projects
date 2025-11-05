@@ -42,15 +42,18 @@ export default function Home() {
             >
               <p className="text-black text-2xl">To know more,</p>
 
+<Link href="/projects/#projectsDiv">
               <button className="relative hover:font-mono overflow-hidden hover:border-2 hover:border-black bg-black text-2xl text-white py-2 px-6 rounded-full w-56 h-20 transform transition duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-gray-300 hover:via-white hover:to-gray-300 hover:text-black shadow-lg">
                 <span className="relative z-10">Recent Projects</span>
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-700"></span>
               </button>
-
+</Link>
+<Link href="/services">
               <button className="relative hover:font-mono overflow-hidden hover:border-2 hover:border-black bg-black text-2xl text-white py-2 px-6 rounded-full w-56 h-20 transform transition duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-gray-300 hover:via-white hover:to-gray-300 hover:text-black shadow-lg">
                 <span className="relative z-10">Let’s Talk!</span>
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-700"></span>
               </button>
+</Link>
             </div>
 
             {/* Rotating Globe Img */}

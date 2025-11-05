@@ -2,6 +2,7 @@
 
 import ProjectHeader from "@/components/projects-components/ProjectsHeader";
 import {ViewAllProjects, RecentProjects,} from "@/components/projects-components/ViewProjects";
+import ScrollToTopButton from "@/components/GoBackButton"
 import { useState } from "react";
 import Image from "next/image";
 
@@ -26,13 +27,14 @@ export default function Projects() {
 
   return (
     <div>
+      <ScrollToTopButton />
       <ProjectHeader />
       <div
         id="quoteBlock"
         className="relative flex justify-center items-center mt-6"
       >
         {/* Image */}
-        <div className="w-[55vw] h-[45vh] relative shadow-md rounded-md overflow-hidden">
+        <div className="w-[75vw] h-[35vh] relative shadow-md rounded-md overflow-hidden">
           <Image
             src="/quotes.jpg"
             alt="Quote Block"
@@ -44,7 +46,7 @@ export default function Projects() {
 
         {/* Quote text overlay */}
         <div className="absolute text-center text-white px-6">
-          <p className="text-[5vh] italic mb-2 drop-shadow-lg">
+          <p className="text-[4vh] italic mb-2 drop-shadow-lg">
             &quot;{randomQuote.text}&quot;
           </p>
           <p className="text-[3vh] font-light drop-shadow-md">
@@ -53,7 +55,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <div id="projects" className="mt-10">
+      <div id="projectsDiv" className="mt-10">
         {showAll ? (
           <ViewAllProjects setShowAll={setShowAll} />
         ) : (
