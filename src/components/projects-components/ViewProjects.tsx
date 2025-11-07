@@ -30,7 +30,7 @@ export function RecentProjects({ setShowAll }: ProjectProps) {
 </div>
 <button
         onClick={() => setShowAll(true)}
-        className="text-2xl relative bottom-7 hover:text-blue-800 transition-colors underline italic"
+        className="text-lg relative bottom-7 hover:text-blue-800 transition-colors underline"
       >
         View All Projects
       </button>
