@@ -2,33 +2,31 @@
 const projects = [
   {
     id: 1,
-    title: "Project 2: 101.Projects Web Portfolio",
-    description: "A personal website built with Next.js",
+    title: "Project 02: 101.Projects Web Portfolio",
+    description: "A responsive personal portfolio built with Next.js and Tailwind CSS, showcasing all featured works.",
     link: "https://github.com/yourusername/portfolio",
+    image: "/img/portfolio-preview.png",
   },
   {
     id: 2,
-    title: "Book Store App Lite",
-    description: "MERN stack app for managing books and users.",
-    link: "https://github.com/yourusername/bookstore",
+    title: "Project 01: SoundPeace",
+    description: "JS Music Web Player created with only HTML, CSS, and JavaScript — featuring playlists and custom styling.",
+    link: "https://github.com/yourusername/soundpeace",
+    image: "/img/soundpeace-preview.png",
   },
   {
     id: 3,
-    title: "Project 01: SoundPeace",
-    description: "JS Music Web Player created with only HTML/CSS/JS",
-    link: "https://github.com/yourusername/soundpeace",
+    title: "Project 04: Crafteria",
+    description: "A full-stack social media web app for sharing crafting recipes, built using the MERN stack with CRUD support.",
+    link: "https://github.com/yourusername/crafteria",
+    image: "/img/crafteria-preview.png",
   },
   {
     id: 4,
-    title: "Project 04: CRAFTERIA",
-    description: "Full CRUD social media web app for sharing crafting recipes",
-    link: "https://github.com/yourusername/library-booking",
-  },
-  {
-    id: 5,
     title: "Project 03: NicNotes!",
-    description: "A Documentation Web App built with Docusaurus framework.",
-    link: "https://github.com/yourusername/library-booking",
+    description: "A documentation and blog web app built with Docusaurus, focused on project management and coding notes.",
+    link: "https://github.com/yourusername/nicnotes",
+    image: "/img/nicnotes-preview.png",
   },
 ];
 

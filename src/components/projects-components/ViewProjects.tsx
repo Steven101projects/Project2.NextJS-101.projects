@@ -13,32 +13,30 @@ export function RecentProjects({ setShowAll }: ProjectProps) {
   return (
     <div id="recent" className="text-center">
     <div id="header" className="text-center my-10">
-  <hr className="border-gray-300 mb-3 w-11/12 mx-auto" />
+  <hr className="border-black mb-3 w-10/12 mx-auto" />
 
   <div className="flex justify-around items-center w-11/12 mx-auto text-xl">
     <Link href="https://github.com" className="hover:text-blue-800 transition-colors underline italic">
       Github
     </Link>
-    <p className="text-[10vh] italic tracking-wide text-black">
+    <p className="text-[12vh] italic tracking-wide text-black mb-3">
       RECENT PROJECTS
     </p>
     <Link href="/blogs" className="hover:text-blue-800 transition-colors underline italic">
       Blogs
     </Link>
   </div>
-  <hr className="border-gray-300 mt-4 w-11/12 mx-auto" />
+  <hr className="border-black mb-3 w-10/12 mx-auto" />
 </div>
-
-<div id="showProjs">
-<ProjectCarousel />
-</div>
-
-      <button
+<button
         onClick={() => setShowAll(true)}
-        className="relative bottom-12 hover:text-blue-800 transition-colors underline italic"
+        className="text-2xl relative bottom-7 hover:text-blue-800 transition-colors underline italic"
       >
         View All Projects
       </button>
+<div id="showProjs">
+<ProjectCarousel />
+</div>
     </div>
   );
 }
@@ -47,13 +45,13 @@ export function ViewAllProjects({ setShowAll }: ProjectProps) {
   return (
     <div id="all" className="text-center">
 <div id="header" className="text-center my-10">
-  <hr className="border-gray-300 mb-3 w-11/12 mx-auto" />
+  <hr className="border-black mb-3 w-10/12 mx-auto" />
 
   <div className="flex justify-around items-center w-11/12 mx-auto text-lg">
     <Link href="https://github.com" className="hover:text-blue-800 transition-colors underline italic">
       Github
     </Link>
-    <p className="text-[10vh] italic tracking-wide text-black">
+    <p className="text-[10vh] italic tracking-wide text-black mb-3">
       ALL 1O1:PROJECTS
     </p>
 
@@ -62,7 +60,7 @@ export function ViewAllProjects({ setShowAll }: ProjectProps) {
     </Link>
   </div>
 
-  <hr className="border-gray-300 mt-4 w-11/12 mx-auto" />
+  <hr className="border-black mb-3 w-10/12 mx-auto" />
 </div>
 <div id="showProjs">
 <AllProjectsGrid />

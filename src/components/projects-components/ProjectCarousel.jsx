@@ -6,7 +6,7 @@ export default function ProjectCarousel3D() {
   const [position, setPosition] = useState(3);
   const total = projects.length;
 
-  // sizes
+  // Sizes
   const CARD_W = 850;
   const CARD_H = 450;
   const GAP = 40;
@@ -36,7 +36,6 @@ export default function ProjectCarousel3D() {
             gridRow: "1 / 2",
             gridColumn: "1 / 8",
             width: "100%",
-            maxWidth: "100%",
             height: `${CARD_H}px`,
             transformStyle: "preserve-3d",
             perspective: "600px",
@@ -44,13 +43,12 @@ export default function ProjectCarousel3D() {
             "--middle": 3,
             "--position": position,
             pointerEvents: "none",
-            overflow: "visible",
           }}
         >
           {projects.map((p, i) => (
             <div
               key={p.id}
-              className="item flex flex-col justify-center items-center text-center rounded-2xl p-6 shadow-xl border bg-white transition-all duration-300"
+              className="item relative overflow-hidden rounded-2xl shadow-xl border bg-white transition-all duration-300"
               style={{
                 position: "absolute",
                 width: `${CARD_W}px`,
@@ -64,32 +62,47 @@ export default function ProjectCarousel3D() {
                 zIndex: `calc((var(--position) - var(--abs)))`,
               }}
             >
-              <h3 className="font-semibold text-2xl mb-3">{p.title}</h3>
-              <p className="text-base text-gray-700 max-w-[700px]">
-                {p.description}
-              </p>
+              {/* Project image with fade */}
+              <div className="relative w-full h-2/3 overflow-hidden">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Info section */}
+              <div className="absolute bottom-0 left-0 w-full p-6 flex justify-between items-end">
+                <div className="max-w-[70%] text-left">
+                  <h3 className="text-2xl font-semibold text-gray-900">
+                    {p.title}
+                  </h3>
+                  <p className="text-gray-700 mt-1 text-base">
+                    {p.description}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
 
-          {/* ✅ Touchable gradient zones */}
+          {/* Gradient click zones */}
           <div
             className="absolute inset-0 flex pointer-events-auto"
             style={{ height: `${CARD_H}px` }}
           >
-{/* Left side */}
-<div
-  onClick={moveLeft}
-  className="w-1/2 h-full cursor-pointer bg-transparent hover:bg-gradient-to-r hover:from-black/10 hover:via-transparent hover:to-transparent transition-all duration-500 ease-in-out"
-  title="Previous"
-></div>
+            {/* Left side */}
+            <div
+              onClick={moveLeft}
+              className="w-1/2 h-full cursor-pointer bg-transparent hover:bg-gradient-to-r hover:from-black/10 hover:via-transparent hover:to-transparent transition-all duration-500 ease-in-out"
+              title="Previous"
+            ></div>
 
-{/* Right side */}
-<div
-  onClick={moveRight}
-  className="w-1/2 h-full cursor-pointer bg-transparent hover:bg-gradient-to-l hover:from-black/10 hover:via-transparent hover:to-transparent transition-all duration-500 ease-in-out"
-  title="Next"
-></div>
-
+            {/* Right side */}
+            <div
+              onClick={moveRight}
+              className="w-1/2 h-full cursor-pointer bg-transparent hover:bg-gradient-to-l hover:from-black/10 hover:via-transparent hover:to-transparent transition-all duration-500 ease-in-out"
+              title="Next"
+            ></div>
           </div>
         </main>
       </div>
