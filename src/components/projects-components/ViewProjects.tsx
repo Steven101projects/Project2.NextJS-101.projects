@@ -51,7 +51,7 @@ export function ViewAllProjects({ setShowAll }: ProjectProps) {
     <Link href="https://github.com" className="hover:text-blue-800 transition-colors underline italic">
       Github
     </Link>
-    <p className="text-[10vh] italic tracking-wide text-black mb-3">
+    <p className="text-[10vh] font-mono italic tracking-wide text-black mb-3 ">
       ALL 1O1:PROJECTS
     </p>
 
