@@ -31,15 +31,15 @@ export default function Projects() {
       <ProjectHeader />
       <div
         id="quoteBlock"
-        className="relative flex justify-center items-center mt-6"
+        className="relative flex justify-center items-center mb-12"
       >
         {/* Image */}
-        <div className="w-[75vw] h-[35vh] relative shadow-md rounded-md overflow-hidden">
+       <div className="w-[75vw] h-[35vh] relative shadow rounded-md overflow-hidden">
           <Image
             src="/quotes.jpg"
             alt="Quote Block"
             fill
-            className="object-cover"
+            className="object-fill"
             priority
           />
         </div>
@@ -54,7 +54,6 @@ export default function Projects() {
           </p>
         </div>
       </div>
-
       <div id="projectsDiv" className="mt-10">
         {showAll ? (
           <ViewAllProjects setShowAll={setShowAll} />
@@ -62,6 +61,7 @@ export default function Projects() {
           <RecentProjects setShowAll={setShowAll} />
         )}
       </div>
+    
     </div>
   );
 }

@@ -4,8 +4,8 @@ export default function ProjectHeader() {
   return (
     <header className="flex justify-between items-center mt-[8px] pr-[60px]">
       {/* Left side — fixed title size */}
-          <Link href="/" className="px-2 py-1 text-8xl">
-            1O1~
+          <Link href="/" className="px-2 py-1 text-7xl">
+            1O1 ~
           </Link>
 
       {/* Right side — fixed nav links */}
