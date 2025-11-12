@@ -5,11 +5,11 @@ import Image from 'next/image'
 export default function About(){
     return (
 
-        <div>
+        <div className="bg-[linear-gradient(to_right,_black_5%,_#be2020_95%)] w-screen h-screen text-white">
             <div className="flex">
       <section id="leftSide" className="flex">
         <div id="links">
-          <Link href="/" className="px-2 py-1 text-8xl">
+          <Link href="/" className="px-2 py-1 text-[5vw]">
             ABOUT
           </Link>
           <nav>
@@ -20,34 +20,100 @@ export default function About(){
           </div>
         </div>
 
-        <div id="centerPart" className="">
-          <div
-            id="helloWorldCard"
-            className=" w-[50vw] h-[50vh] ml-3 mt-[5vh] bg-white border border-black rounded-4xl pl-6"
-          >
-                      <div className="absolute right-5 w-[28vw] h-[50vh]">
+        <div id="centerPart" className="flex flex-col items-center ml-[2vw]">
+           <div className="absolute mt-[4vh] w-[28vw] h-[50vh]">
                          <Image
               src="/damn.jpg"
               alt="Profile"
               fill
-              className="object-cover rounded-4xl w-2xl h-2xl"
+              className="object-cover rounded-4xl w-[380px] h-[280px]"
             />
           </div>
-            <p className="relative bottom-5 text-[3.9vh] text-[#222222] ml-2 italic">
+          <div
+            id="helloWorldCard"
+            className="w-[45vw] h-[70vh] mt-[24vh] bg-white border border-black rounded-[6vh] pl-6"
+          >
+            <p className="text-center mt-[34vh] text-[3vh] text-[#222222] mr-8">
               Believing on creativity and simplicity, I specialize designing and developing innovative digital solutions that combine clean code, efficient system architecture, and user-centered design. With experience in teaching programming and mentoring aspiring developers, I’m passionate about sharing knowledge and building technology that inspires creativity and knowledge.
             </p>
           </div>
         </div>
       </section>
+<section
+  id="rightSide"
+  className="w-[35vw] flex flex-col mt-[2vh]"
+>
+  <p id="header" className="relative right-[6vw] text-[4vw] font-serif italic mb-[2vh]">
+    Nico Steven Castro
+  </p>
 
-      <section id="rightSide" className="flex justify-end w-full">
-          <p className="leading-relaxed text-[3.4vh] p-3 mt-[50vh]">
-            <span className="italic font-semibold">Welcome!</span> I’m Nico
-            Castro, <br />
-            A Software/Web Engineer | <br /> Software System Architect | Graphic
-            Designer | Tech Instructor | Tech Leader |
-          </p>
-      </section>
+  <p className="leading-relaxed text-[4vh] mb-[4vh] text-center">
+    Software/Web Engineer <br />
+    | System Architect | Graphic Designer | <br />
+    Tech Instructor | Tech Leader
+  </p>
+
+<div className="bg-[#2b0202]/60 rounded-3xl shadow-md p-4 w-[30vw] ml-[5vh] text-center">
+    <p className="italic text-[3vh] text-[#ffffff] mb-2 font-semibold">
+      Skill Languages
+    </p>
+    <p className="text-[2.8vh] text-gray-200 leading-snug">
+      JavaScript · React · Node.js · C# · Python · SQL
+    </p>
+  </div>
+<div
+  id="Contacts"
+  className="text-[4vh] leading-relaxed mt-10 flex flex-col items-center space-y-4"
+>
+  {/* Contact Info */}
+  <div>
+    <p>
+      <span className="font-bold text-[#ffffff]">EMAIL:</span>{' '}
+      <a
+        href="mailto:castroconi101@gmail.com"
+        className="hover:text-[#ff8080] hover:underline transition duration-300"
+      >
+        castroconi101@gmail.com
+      </a>
+    </p>
+    <p>
+      <span className="font-bold text-[#ffffff]">PHONE:</span>{' '}
+      <a
+        href="tel:+14374451436"
+        className="hover:text-[#ff8080] transition duration-300"
+      >
+        +1 437 445 1436
+      </a>
+    </p>
+  </div>
+
+  {/* Other Links */}
+  <div className="mt-2">
+    <p className="font-bold text-[#fbfbfb] mb-1 text-center">Other Links:</p>
+    <nav className="flex space-x-6 text-[3vh]"><p> | </p>
+      <a
+        href="#"
+        className="hover:text-[#ff8080] hover:underline transition duration-300"
+      >
+        LinkedIn
+      </a> <p> | </p>
+      <a
+        href="#"
+        className="hover:text-[#ff8080] hover:underline transition duration-300"
+      >
+        Github
+      </a><p> | </p>
+      <a
+        href="#"
+        className="hover:text-[#ff8080] hover:underline transition duration-300"
+      >
+        Instagram
+      </a><p> | </p>
+    </nav>
+  </div>
+</div>
+
+</section>
     </div>
         </div>
     )

@@ -29,12 +29,19 @@ export default function Projects() {
     <div>
       <ScrollToTopButton />
       <ProjectHeader />
+      <div id="projectsDiv" className="mt-10">
+        {showAll ? (
+          <ViewAllProjects setShowAll={setShowAll} />
+        ) : (
+          <RecentProjects setShowAll={setShowAll} />
+        )}
+      </div>
       <div
         id="quoteBlock"
-        className="relative flex justify-center items-center mb-12"
+        className="relative bottom-5 flex justify-center items-center mb-20"
       >
         {/* Image */}
-       <div className="w-[75vw] h-[35vh] relative shadow rounded-md overflow-hidden">
+       <div className="w-[80vw] h-[35vh] relative shadow overflow-hidden">
           <Image
             src="/quotes.jpg"
             alt="Quote Block"
@@ -54,14 +61,6 @@ export default function Projects() {
           </p>
         </div>
       </div>
-      <div id="projectsDiv" className="mt-10">
-        {showAll ? (
-          <ViewAllProjects setShowAll={setShowAll} />
-        ) : (
-          <RecentProjects setShowAll={setShowAll} />
-        )}
-      </div>
-    
     </div>
   );
 }

@@ -13,7 +13,7 @@ export function RecentProjects({ setShowAll }: ProjectProps) {
   return (
     <div id="recent" className="text-center">
     <div id="header" className="text-center my-10">
-  <hr className="border-black mb-3 w-10/12 mx-auto" />
+  <hr className="border-black mb-3 w-11/12 mx-auto" />
 
   <div className="flex justify-around items-center w-11/12 mx-auto text-xl">
     <Link href="https://github.com" className="hover:text-blue-800 transition-colors underline italic">
@@ -26,11 +26,11 @@ export function RecentProjects({ setShowAll }: ProjectProps) {
       Blogs
     </Link>
   </div>
-  <hr className="border-black mb-3 w-10/12 mx-auto" />
+ <hr className="border-black mb-3 w-11/12 mx-auto" />
 </div>
 <button
         onClick={() => setShowAll(true)}
-        className="text-lg relative bottom-7 hover:text-blue-800 transition-colors underline"
+        className="text-lg relative bottom-5 hover:text-blue-800 transition-colors underline"
       >
         View All Projects
       </button>
@@ -45,7 +45,7 @@ export function ViewAllProjects({ setShowAll }: ProjectProps) {
   return (
     <div id="all" className="text-center">
 <div id="header" className="text-center my-10">
-  <hr className="border-black mb-3 w-10/12 mx-auto" />
+ <hr className="border-black mb-3 w-11/12 mx-auto" />
 
   <div className="flex justify-around items-center w-11/12 mx-auto text-lg">
     <Link href="https://github.com" className="hover:text-blue-800 transition-colors underline italic">
@@ -60,7 +60,7 @@ export function ViewAllProjects({ setShowAll }: ProjectProps) {
     </Link>
   </div>
 
-  <hr className="border-black mb-3 w-10/12 mx-auto" />
+ <hr className="border-black mb-3 w-11/12 mx-auto" />
 </div>
 <div id="showProjs">
 <AllProjectsGrid />
