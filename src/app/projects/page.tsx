@@ -36,7 +36,7 @@ export default function Projects() {
           <RecentProjects setShowAll={setShowAll} />
         )}
       </div>
-      <div
+       <div
         id="quoteBlock"
         className="relative bottom-5 flex justify-center items-center mb-20"
       >

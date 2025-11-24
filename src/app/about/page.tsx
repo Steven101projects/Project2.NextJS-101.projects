@@ -5,13 +5,13 @@ import Image from 'next/image'
 export default function About(){
     return (
 
-        <div className="bg-[linear-gradient(to_right,_black_5%,_#be2020_95%)] w-screen h-screen text-white">
+        <div className="bg-[linear-gradient(to_right,_black_5%,_#D41313_95%)] w-screen h-screen text-white">
             <div className="flex">
       <section id="leftSide" className="flex">
         <div id="links">
-          <Link href="/" className="px-2 py-1 text-[5vw]">
+          <p className="px-2 py-1 text-[5vw]">
             ABOUT
-          </Link>
+          </p>
           <nav>
             <NavWheel />
           </nav>
@@ -21,19 +21,19 @@ export default function About(){
         </div>
 
         <div id="centerPart" className="flex flex-col items-center ml-[2vw]">
-           <div className="absolute mt-[4vh] w-[28vw] h-[50vh]">
+           <div className="absolute mt-[4vh] w-[30vw] h-[50vh]">
                          <Image
               src="/damn.jpg"
               alt="Profile"
               fill
-              className="object-cover rounded-4xl w-[380px] h-[280px]"
+              className="object-cover rounded-4xl w-[480px] h-[380px]"
             />
           </div>
           <div
             id="helloWorldCard"
-            className="w-[45vw] h-[70vh] mt-[24vh] bg-white border border-black rounded-[6vh] pl-6"
+            className="w-[45vw] h-[50vh] mt-[45vh] bg-white border border-black rounded-[6vh] pl-6"
           >
-            <p className="text-center mt-[34vh] text-[3vh] text-[#222222] mr-8">
+            <p className="text-center mt-[14vh] text-[3.2vh] text-[#222222] mr-8">
               Believing on creativity and simplicity, I specialize designing and developing innovative digital solutions that combine clean code, efficient system architecture, and user-centered design. With experience in teaching programming and mentoring aspiring developers, I’m passionate about sharing knowledge and building technology that inspires creativity and knowledge.
             </p>
           </div>
@@ -43,11 +43,11 @@ export default function About(){
   id="rightSide"
   className="w-[35vw] flex flex-col mt-[2vh]"
 >
-  <p id="header" className="relative right-[6vw] text-[4vw] font-serif italic mb-[2vh]">
+  <p id="header" className="relative right-4 text-[4vw] font-serif italic mb-[1vh]">
     Nico Steven Castro
   </p>
 
-  <p className="leading-relaxed text-[4vh] mb-[4vh] text-center">
+  <p className="leading-relaxed text-[4vh] mb-[6vh] text-center">
     Software/Web Engineer <br />
     | System Architect | Graphic Designer | <br />
     Tech Instructor | Tech Leader
@@ -57,13 +57,13 @@ export default function About(){
     <p className="italic text-[3vh] text-[#ffffff] mb-2 font-semibold">
       Skill Languages
     </p>
-    <p className="text-[2.8vh] text-gray-200 leading-snug">
-      JavaScript · React · Node.js · C# · Python · SQL
+    <p className="text-[2.8vh] text-white leading-snug">
+      JavaScript · React · HTML · C# · Python · CSS
     </p>
   </div>
 <div
   id="Contacts"
-  className="text-[4vh] leading-relaxed mt-10 flex flex-col items-center space-y-4"
+  className="text-[4vh] leading-relaxed mt-6 flex flex-col items-center space-y-4"
 >
   {/* Contact Info */}
   <div>
@@ -90,7 +90,7 @@ export default function About(){
   {/* Other Links */}
   <div className="mt-2">
     <p className="font-bold text-[#fbfbfb] mb-1 text-center">Other Links:</p>
-    <nav className="flex space-x-6 text-[3vh]"><p> | </p>
+    <nav className="flex space-x-6 text-[4vh]"><p> | </p>
       <a
         href="#"
         className="hover:text-[#ff8080] hover:underline transition duration-300"
