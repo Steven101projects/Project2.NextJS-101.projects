@@ -66,12 +66,12 @@ export function ViewAllProjects({ setShowAll }: ProjectProps) {
 <AllProjectsGrid />
 </div>
 
-      <button
-        onClick={() => setShowAll(false)}
-        className="mt-4 mb-3.5 hover:text-blue-800 transition-colors underline italic"
-      >
-        Back to Recent Projects
-      </button>
+<button
+  onClick={() => setShowAll(false)}
+  className="mt-4 mb-3.5 text-black text-lg hover:text-gray-700 underline transition duration-200"
+>
+  Back to Recent Projects
+</button>
     </div>
   );
 }

@@ -43,27 +43,27 @@ export default function About(){
   id="rightSide"
   className="w-[35vw] flex flex-col mt-[2vh]"
 >
-  <p id="header" className="relative right-4 text-[4vw] font-serif italic mb-[1vh]">
+  <p id="header" className="relative right-8 text-[4vw] font-serif italic mb-[1vh]">
     Nico Steven Castro
   </p>
 
-  <p className="leading-relaxed text-[4vh] mb-[6vh] text-center">
-    Software/Web Engineer <br />
-    | System Architect | Graphic Designer | <br />
-    Tech Instructor | Tech Leader
+  <p className="relative right-8 leading-relaxed mt-3 text-[4.5vh] mb-[6vh] text-center">
+    | Full Stack Developer 
+    | Software Design Engineer | Graphic Designer |
+     Instructor | 
   </p>
 
 <div className="bg-[#2b0202]/60 rounded-3xl shadow-md p-4 w-[30vw] ml-[5vh] text-center">
     <p className="italic text-[3vh] text-[#ffffff] mb-2 font-semibold">
-      Skill Languages
+      Languages
     </p>
     <p className="text-[2.8vh] text-white leading-snug">
-      JavaScript · React · HTML · C# · Python · CSS
+      JavaScript · MERN · HTML · C# · Python · Tailwind
     </p>
   </div>
 <div
   id="Contacts"
-  className="text-[4vh] leading-relaxed mt-6 flex flex-col items-center space-y-4"
+  className="text-[4vh]  leading-relaxed mt-8 flex flex-col items-center space-y-4"
 >
   {/* Contact Info */}
   <div>
@@ -89,7 +89,7 @@ export default function About(){
 
   {/* Other Links */}
   <div className="mt-2">
-    <p className="font-bold text-[#fbfbfb] mb-1 text-center">Other Links:</p>
+    <p className="font-bold text-[#fbfbfb] mt-3 text-center">Other Links:</p>
     <nav className="flex space-x-6 text-[4vh]"><p> | </p>
       <a
         href="#"

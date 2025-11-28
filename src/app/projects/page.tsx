@@ -38,7 +38,7 @@ export default function Projects() {
       </div>
        <div
         id="quoteBlock"
-        className="relative bottom-5 flex justify-center items-center mb-20"
+        className="relative bottom-5   mt-7 flex justify-center items-center mb-20"
       >
         {/* Image */}
        <div className="w-[80vw] h-[35vh] relative shadow overflow-hidden">

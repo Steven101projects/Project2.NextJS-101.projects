@@ -37,7 +37,7 @@ export default function Home() {
 
           <div id="centerPartBottom" className="flex">
             <div
-              className="flex flex-col items-start space-y-3 mt-4"
+              className="flex flex-col items-start space-y-3 mt-4 ml-5"
               id="moreButtons"
             >
               <p className="text-black text-2xl">To know more,</p>
@@ -85,8 +85,7 @@ export default function Home() {
           <p className="leading-relaxed text-[3.4vh] p-3 mt-[50vh]">
             <span className="italic font-semibold">Welcome!</span> I’m Nico
             Castro, <br />
-            A Software/Web Engineer | <br /> Software System Architect | Graphic
-            Designer | Tech Instructor | Tech Leader |
+            Lives in CA / PH | 19 Years-old | <br /> Studied Software Engineering at Centennial College.
           </p>
         </div>
         {/* External Links Component */}
