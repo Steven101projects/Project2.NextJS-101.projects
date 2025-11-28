@@ -21,7 +21,7 @@ export default function About(){
         </div>
 
         <div id="centerPart" className="flex flex-col items-center ml-[2vw]">
-           <div className="absolute mt-[4vh] w-[30vw] h-[50vh]">
+           <div className="absolute left-[21vw] mt-[4vh] w-[28vw] h-[48vh]">
                          <Image
               src="/damn.jpg"
               alt="Profile"
@@ -31,10 +31,10 @@ export default function About(){
           </div>
           <div
             id="helloWorldCard"
-            className="w-[45vw] h-[50vh] mt-[45vh] bg-white border border-black rounded-[6vh] pl-6"
+            className="w-[40vw] h-[50vh] mt-[45vh] ml-[5vw] border border-black rounded-[6vh] pl-6"
           >
-            <p className="text-center mt-[14vh] text-[3.2vh] text-[#222222] mr-8">
-              Believing on creativity and simplicity, I specialize designing and developing innovative digital solutions that combine clean code, efficient system architecture, and user-centered design. With experience in teaching programming and mentoring aspiring developers, I’m passionate about sharing knowledge and building technology that inspires creativity and knowledge.
+            <p className="text-right mt-[8vh] text-[3.2vh] text-white mr-6">
+              Believing on creativity and simplicity,<br></br> I specialize designing and developing innovative digital solutions that combine clean code, efficient system architecture, and user-centered design. With experience in teaching programming and mentoring aspiring developers, I’m passionate about sharing knowledge and building technology that inspires creativity and knowledge.
             </p>
           </div>
         </div>
