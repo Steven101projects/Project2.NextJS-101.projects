@@ -36,7 +36,7 @@ export default function ServicesHeader() {
         </nav>
 
         {/* Keep your SERVICES part unchanged */}
-        <p className="px-2 py-1 text-7xl">SERVICES</p>
+        <p className="px-2 py-1 text-7xl">SKILLS</p>
       </div>
     </header>
   <hr className="border-gray-300 mb-3 w-10/12 ml-52" />
