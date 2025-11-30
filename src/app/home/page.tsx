@@ -20,27 +20,36 @@ export default function Home() {
         </div>
 
         <div id="centerPart" className="">
+            <div className="absolute left-[21vw] mt-[4vh] w-[28vw] h-[68vh]">
+                                   <Image
+                        src="/damn.jpg"
+                        alt="Profile"
+                        fill
+                        className="object-cover rounded-4xl w-[480px] h-[380px]"
+                      />
+                    </div>
           <div
             id="helloWorldCard"
-            className="right-[2vw] w-[50vw] h-[50vh] ml-3 mt-[5vh] bg-white border border-black rounded-4xl pl-6"
+            className="relative left-[35vw] w-[60vw] h-[55vh] ml-3 mt-[8vh] bg-white border border-black rounded-4xl pl-6"
           >
             <h1 className="text-[7.4vw] text-[#222222]">
               Hello,<span className="italic">World!</span>
             </h1>
             <p className="relative bottom-5 text-[3.9vh] text-[#222222] ml-2 italic">
-              Hey there! I’m a creative and tech enthusiast who loves solving
-              problems, thinking critically, and bringing ideas to life through
-              innovation. Life can be challenging at times, <br />
+              Hey there! I’m a creative and tech enthusiast <br /> who loves solving
+              problems, thinking critically, <br /> and bringing ideas to life through
+              innovation.<br /> Life can be challenging at times, <br />
               so let’s make it easier together!
             </p>
           </div>
 
-          <div id="centerPartBottom" className="flex">
+          <div id="centerPartBottom" className="mt-[13vh]">
+                          <p className="text-black text-2xl">Welcome! I'm Nico Castro. To know more:</p>
             <div
-              className="flex flex-col items-start space-y-3 mt-4 ml-5"
+              className="flex items-start space-x-5 mt-4 ml-5"
               id="moreButtons"
             >
-              <p className="text-black text-2xl">To know more,</p>
+
 
 <Link href="/projects/#projectsDiv">
               <button className="relative hover:font-mono overflow-hidden hover:border-2 hover:border-black bg-black text-2xl text-white py-2 px-6 rounded-full w-56 h-20 transform transition duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-gray-300 hover:via-white hover:to-gray-300 hover:text-black shadow-lg">
@@ -55,9 +64,13 @@ export default function Home() {
               </button>
 </Link>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Rotating Globe Img */}
-            <div className="absolute top-[38vh] right-[11vw] w-[60vw] h-[60vh] object-contain">
+      <section id="rightSide" className="flex justify-end w-full">
+        {/* External Links Component */}
+         <div className="relative left-[10vw] top-[8vh] w-[560px] h-[560px] object-contain">
               <Image
                 src="/earth.gif"
                 alt="Earth"
@@ -65,31 +78,12 @@ export default function Home() {
                 className="object-contain"
               />
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="rightSide" className="flex justify-end w-full">
-        <div
-          id="introAboutMe"
-          className="blackBox bg-black text-white rounded-l-4xl mt-10 p-4 flex flex-col relative"
-        >
-          <div className="absolute right-5 w-[28vw] h-[50vh]">
-            <Image
-              src="/damn.jpg"
-              alt="Profile"
-              fill
-              className="object-cover rounded-4xl"
-            />
-          </div>
-          <p className="leading-relaxed text-[3.4vh] p-3 mt-[50vh]">
-            <span className="italic font-semibold">Welcome!</span> I’m Nico
-            Castro, <br />
-            Lives in CA / PH | 19 Years-old | <br /> Studied Software Engineering at Centennial College.
-          </p>
-        </div>
-        {/* External Links Component */}
         <ExternalLinks />
+      </section>
+      <section id="endSide">
+        <div className="w-[40vw] h-full">
+<p>Nico Pogi</p>
+        </div>
       </section>
     </div>
   );

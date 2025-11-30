@@ -24,3 +24,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.triangleRightUpsideDown {
+  clip-path: polygon(100 percent 0 percent, 0 percent 100 percent, 100 percent 100 percent);
+}
