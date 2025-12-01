@@ -21,7 +21,7 @@ export default function ProjectHeader() {
           href="/services"
           className="hover:underline hover:font-semibold transition-all duration-300"
         >
-          Services
+          Skills
         </Link>
         <span>|</span>
         <Link

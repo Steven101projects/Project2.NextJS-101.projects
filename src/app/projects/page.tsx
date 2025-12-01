@@ -1,14 +1,21 @@
 "use client";
 
 import ProjectHeader from "@/components/projects-components/ProjectsHeader";
-import {ViewAllProjects, RecentProjects,} from "@/components/projects-components/ViewProjects";
-import ScrollToTopButton from "@/components/GoBackButton"
-import { useState } from "react";
+import { ViewAllProjects, RecentProjects } from "@/components/projects-components/ViewProjects";
+import ScrollToTopButton from "@/components/GoBackButton";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 /* eslint-disable react/no-unescaped-entities */
 export default function Projects() {
-  const quotes = [
+
+  // Type for one quote
+  type Quote = {
+    text: string;
+    author: string;
+  };
+
+  const quotes: Quote[] = [
     {
       text: "Every brushstroke is a step toward mastery.",
       author: "Nikola Tesla",
@@ -23,44 +30,55 @@ export default function Projects() {
 
   const [showAll, setShowAll] = useState(false);
 
-  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  // Typed quote state to avoid "never" errors
+  const [quote, setQuote] = useState<Quote | null>(null);
+
+  // Pick random quote only on client to avoid hydration mismatch
+  useEffect(() => {
+    const q = quotes[Math.floor(Math.random() * quotes.length)];
+    setQuote(q);
+  }, []);
 
   return (
     <div>
       <ScrollToTopButton />
       <ProjectHeader />
-      <div id="projectsDiv" className="mt-10">
+
+      <div id="projectsDiv" className="">
         {showAll ? (
           <ViewAllProjects setShowAll={setShowAll} />
         ) : (
           <RecentProjects setShowAll={setShowAll} />
         )}
       </div>
-       <div
-        id="quoteBlock"
-        className="relative bottom-5   mt-7 flex justify-center items-center mb-20"
-      >
-        {/* Image */}
-       <div className="w-[80vw] h-[35vh] relative shadow overflow-hidden">
-          <Image
-            src="/quotes.jpg"
-            alt="Quote Block"
-            fill
-            className="object-fill"
-            priority
-          />
-        </div>
 
-        {/* Quote text overlay */}
-        <div className="absolute text-center text-white px-6">
-          <p className="text-[4vh] italic mb-2 drop-shadow-lg">
-            &quot;{randomQuote.text}&quot;
-          </p>
-          <p className="text-[3vh] font-light drop-shadow-md">
-            &ndash; {randomQuote.author}
-          </p>
+      {quote && (
+        <div
+          id="quoteBlock"
+          className="relative bottom-5 mt-7 flex justify-center items-center mb-20"
+        >
+          {/* Background image */}
+          <div className="w-[80vw] h-[35vh] relative shadow overflow-hidden">
+            <Image
+              src="/quotes.jpg"
+              alt="Quote Block"
+              fill
+              className="object-fill"
+              priority
+            />
+          </div>
+
+          {/* Quote overlay */}
+          <div className="absolute text-center text-white px-6">
+            <p className="text-[4vh] italic mb-2 drop-shadow-lg">
+              "{quote.text}"
+            </p>
+            <p className="text-[3vh] font-light drop-shadow-md">
+              by {quote.author}
+            </p>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

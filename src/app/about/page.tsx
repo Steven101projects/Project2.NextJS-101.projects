@@ -34,7 +34,7 @@ export default function About(){
             className="w-[40vw] h-[50vh] mt-[45vh] ml-[5vw] border border-black rounded-[6vh] pl-6"
           >
             <p className="text-right mt-[8vh] text-[3.2vh] text-white mr-6">
-              Believing on creativity and simplicity,<br></br> I specialize designing and developing innovative digital solutions that combine clean code, efficient system architecture, and user-centered design. With experience in teaching programming and mentoring aspiring developers, I’m passionate about sharing knowledge and building technology that inspires creativity and knowledge.
+              Believing on creativity and simplicity,<br></br> I specialize designing and developing innovative digital solutions that combine clean code, efficient system architecture, and user-centered design. I am known to being strict to front end and being obssessed on the back end. With experience in teaching programming and mentoring aspiring developers, I’m passionate about sharing knowledge and building technology that inspires creativity and knowledge.
             </p>
           </div>
         </div>

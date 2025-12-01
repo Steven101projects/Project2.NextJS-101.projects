@@ -17,15 +17,15 @@ const services = [
     details:
       "Our UI/UX design process focuses on usability, accessibility, and aesthetics. We craft modern interfaces through wireframes and prototypes that align with your brand and enhance user satisfaction across all devices.",
   },
-  {
-    id: 3,
-    title: "Backend Development",
-    description:
-      "develop secure and high-performance server-side systems and APIs for modern web apps",
-    image: "/img/services-img/backend.jpg",
-    details:
-      "We design and build reliable server architectures with clean, efficient APIs. Using Node.js, Express, and databases like MongoDB or SQL, our backend ensures data security, scalability, and smooth API communication.",
-  },
+{
+  id: 3,
+  title: "Agile Development",
+  description:
+    "plan, build, and deliver software through adaptive workflows that respond to change",
+  image: "/img/services-img/agile.jpg",
+  details:
+    "We apply Agile practices to create software in steady and manageable steps. This includes clear sprint planning, user story creation, continuous feedback, and frequent releases. Our focus is on collaboration, transparency, and steady improvement so each product grows in a clear and predictable way.",
+},
 ];
 
 export default services;
